@@ -1,5 +1,5 @@
 #1 script for collect number of n causal snps (estimated)
-OUTPUTFILE="path/to/this_output"
+OUTPUTFILE="path/to/output_1"
 echo -e "Variant\tN_Causal" > ${OUTPUTFILE}
 
 for locus in all_locus
@@ -9,7 +9,7 @@ echo -e "${locus}\t${NCAUSAL}" >> ${OUTPUTFILE}
 done
 
 #2 Pre and Post-Pr(# of causal SNPs is k)
-OUTPUTFILE="path/to/this_output"
+OUTPUTFILE="path/to/output_2"
 echo -e "Variant\tN_Causal\tPreProb\tPostProb" > ${OUTPUTFILE}
 
 for locus in all_locus
