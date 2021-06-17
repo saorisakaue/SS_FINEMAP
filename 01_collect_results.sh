@@ -10,6 +10,8 @@ done
 
 #2 Pre and Post-Pr(# of causal SNPs is k)
 OUTPUTFILE="path/to/this_output"
+echo -e "Variant\tN_Causal\tPreProb\tPostProb" > ${OUTPUTFILE}
+
 for locus in all_locus
 do
 for i in `seq 1 5` # because max causal n was set to 5
